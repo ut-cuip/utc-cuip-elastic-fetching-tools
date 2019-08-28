@@ -114,7 +114,7 @@ def main(file_path):
                         # Print this just once - if there are no missing values this won't print at all!
                         print("Missing info for:")
                         printed = True
-                    print("  - 2019-6-{}  |  {}:00".format(day, hour))
+                    print("  • 2019-6-{}  |  {}:00".format(day, hour))
 
     # Prompt the user to save the file (append the word 'anyways' in the event that there was missing data) - notify user of save location
     prompt = input("Save{}? Y/N:  ".format(" anyways" if printed else ""))

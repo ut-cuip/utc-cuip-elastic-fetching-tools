@@ -125,7 +125,7 @@ def main(file_path):
             if "--inplace" in sys.argv
             else "answer_key_{}.csv".format(datetime.datetime.now())
         )
-        new_df.to_csv(name)
+        new_df.to_csv(name, index=False)
         print("Saved to {}".format(name))
 
 
